@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height:100%;
+	width: 100%;
+}
+
+h2{
+	font-family: 'Playfair Display', serif;
+	font-size:200%;
+	font-weight:700;
+	color: #2c2c2c;
+	text-align: center;
+	text-decoration: underline;
+}
+
+
+
+
+img {
+	text-align:center;
+	max-width:100%;
+	height: auto;
+	width:auto;
+}
+
+
+
+/* Start navigation */
+
+
+ .sidenav {
+    height: 100%; /* 100% Full-height */
+    width:  250px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color:var(--teal)
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+    
+  }
+
+  .menu{
+      color: var(--lightblue);
+      background-color:var(--black);
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .nav-icon{
+	  margin:15px;
+	  width:2vw
+  }
+
+
+
+  /* Header */
+  .header{
+	  height:100%;
+	  width:100%;
+	  margin:auto;
+	  background: url("images/header-background.jpg");
+	  background-position: center;
+	  background-size: cover;
+	  display: table;
+	  top:0;}
+
+    .header .inner {
+		display:table-cell;
+		vertical-align: middle;
+		width: 100%;
+		max-width:none;
+	}
+
+	.heading{
+		max-width:600px;
+		margin:auto;
+			}
+
+	h1 {
+		font-family: fantasy;
+		font-size:500%;
+		font-weight:700;
+		text-align:center;
+		padding:2%;
+		text-shadow:0px 0px 250px #fff;
+	}
+
+	.heading p{
+		font-family: fantasy;
+		font-size:200%;
+		font-weight:700;
+		text-align:center;
+		padding:10px;
+		text-shadow:0px 0px 250px #fff;
+	}
+
+	/* About me Section */
+
+	.top-container{
+		margin:20px;
+		display:grid;
+		grid-gap:20px;
+		grid-template-areas: 
+		'left-container right-container';
+	}
+	
+	.left-container{
+		grid-area: left-container;
+		font-family: 'Raleway',serif;
+	color: #2c2c2c;
+	font-size: 2vw;
+	margin: 10px;
+	padding:15px;
+	line-height:180%;
+	text-align: justify;
+	align-items:stretch;
+	font-weight:300;
+	}
+
+	.right-container{
+		grid-area:right-container;
+	}
+		   
+	
+/* video gallery */
+
+.video-gallery h2{
+	font-size:4rem;	
+	margin: 20px;
+	text-transform: capitalize;
+	color: #333;
+	text-align:center;
+	font-family: Raleway, Georgia, 'Times New Roman', Times, serif;
+	}
+
+.video-container{
+	display:flex;
+	justify-content: space-evenly;
+	flex-wrap:wrap
+	
+
+}
+
+
+iframe {
+	
+	height:25rem;
+	width:30rem;
+	margin:2rem;
+	overflow:hidden;
+	
+	
+}
+
+	/* Portfolio gallery */
+	
+.no-touch h2{
+	font-size:4rem;	
+	margin: 20px;
+	text-transform: capitalize;
+	color: #333;
+	text-align:center;
+	font-family: Raleway, Georgia, 'Times New Roman', Times, serif;
+	}
+
+.wrap {
+	overflow: hidden;
+	margin: 10px;
+  }
+  .gallery-box {
+	float: left;
+	position: relative;
+	width: 33%;
+	padding-bottom: 20%;
+	
+  }
+  .boxInner {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	top: 10px;
+	bottom: 10px;
+	overflow: hidden;
+  }
+  .boxInner img {
+	width: 100%;
+  }
+  .boxInner .titleBox {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-bottom: -50px;
+	background: #fff;
+	background: rgba(0, 0, 0, 0.5);
+	color: #FFF;
+	padding: 10px;
+	text-align: center;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+  }
+  section.no-touch .boxInner:hover .titleBox, section.touch .boxInner.touchFocus .titleBox {
+	margin-bottom: 0;
+
+	}
+
+	
+
+	/* Services section */
+    .services-section {
+		max-width: 1200px;
+		width:auto;
+		margin: 0 auto;
+		text-align: center;
+		padding: 30px;
+	  }
+	  
+	  h3 {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+		color: #333;
+		font-size: 1.825rem;
+		margin: 1.3rem 0;
+	  }
+	  
+	  .section-lead {
+		max-width: 600px;
+		margin: 1rem auto 1.5rem;
+	  }
+	  
+	  .service a {
+		color: #5b7abb;
+		display: block;
+	  }
+	  
+	  .service h4 {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+		color: #56ceba;
+		font-size: 2.3rem;
+		margin: 1rem 0 0.6rem;
+	  }
+
+	  .service p{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+		color:black;
+		font-size: 1.3rem;
+		margin: 1rem 0 0.6rem; 
+	  }
+	  
+	  .services-grid {
+		display: -webkit-box;
+		display: grid;
+		grid-template-rows:inherit;
+		-webkit-box-align: center;
+		align-items: center;
+	  }
+	  
+	  .service {
+		background:lightblue;
+		margin: 20px;
+		padding: 20px;
+		border-radius: 4px;
+		text-align: center;
+		-webkit-box-flex: 1;
+		flex: 1;
+		display: -webkit-box;
+		display: flex;
+		flex-wrap: wrap;
+		border: 2px solid #e7e7e7;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	  }
+	  
+	  .service:hover {
+		-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+		-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+	  }
+	  
+	  .service i {
+		font-size: 3.45rem;
+		margin: 1rem 0;
+		
+
+	  }
+	  
+	  .service1 i,
+	  .service1 h4,
+	  .service1 .cta {
+		color: black;
+		;
+	  }
+	  
+	  .service1:hover {
+		border: 2px solid #42b7ca;
+		background-color: lightcoral;
+	  }
+	  
+	  .service2 i,
+	  .service2 h4,
+	  .service2 .cta {
+		color: black;
+	  }
+	  
+	  .service2:hover {
+		border: 2px solid #425fca;
+		background-color: lightcoral;
+	  }
+	  
+	  .service3 i,
+	  .service3 h4,
+	  .service3 .cta {
+		color: black;
+	  }
+	  
+	  .service3:hover {
+		border: 2px solid #9c42ca;
+		background-color: lightcoral;
+	  }
+	  
+	  .service .cta span {
+		font-size: 0.6rem;
+	  }
+
+	  
+	  .service > * {
+		flex: 1 1 100%;
+	  }
+	  
+	  .service .cta {
+		align-self: flex-end;
+	  }
+	  
+	  @media all and (max-width:900px) {
+		.services-grid {
+		  display: -webkit-box;
+		  display: flex;
+		  -webkit-box-orient: vertical;
+		  -webkit-box-direction: normal;
+		  flex-direction: column;
+		}
+	  }
+
+
+    /* Contact section */
+	.contact-form{
+		height: auto;
+		width: 100vw;
+		margin: 50px;
+		display: grid;
+		grid-gap:20px;
+		grid-template-areas:
+		'first-container first-container second-container';
+		justify-content: space-evenly;
+		align-items: center;
+		
+
+	}
+
+	.contact-form > *{
+		width:50%;
+	}
+    
+	.contact-form .first-container {
+	grid-area: first-container;
+	width:100%;
+	height:auto;
+	background: url("https://www.duraroof.in/wp-content/themes/socialbeat-landiing-page-template/images/background_contactus.jpg");
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+
+	}
+
+	.contact-form .first-container .info{
+		margin:24px;
+	
+
+	}
+
+	.info h3 {
+		font-size: 40px;
+		font-weight:700;
+		line-height: 1.2;
+		padding-bottom: 10px;
+
+	}
+	.info p{
+		font-size: 25px;
+		line-height: 1.6;
+		font-weight:400;
+
+
+	}
+
+	.second-container{
+		width: 40vw;
+		height:auto;
+		padding: 30px;
+		background: #f2f2f2;
+	}
+	
+	.second-container h2{
+		font-size:30px;
+		font-weight:500;
+		color: #333;
+		line-height: 1.2;
+		text-align:center;
+		margin-bottom:20px;
+	}
+
+	.second-container form{
+		display:flex;
+		flex-direction: column;
+		
+	}
+
+	.second-container form .form-group{
+		margin-bottom:10px;
+		min-height: 50px;
+		border: 1px solid #e6e6e6;
+		padding: 0 20px;
+	}
+
+	.second-container form .form-group label{
+		display:flex;
+		align-items:center;
+		width:100%;
+		border: 1px solid #e6e6e6;
+		font-size: 16px;
+		color: #333;
+		text-transform: uppercase;
+		margin-top:-1px;
+	}
+
+
+	.second-container form .form-group:first-of-type input{
+		width:49%;
+		margin-right: -5px;
+		
+	}
+	.second-container form .form-group input{
+		width:100%;
+		font-size: 15px;
+		margin-top:-2px;
+	}
+
+	.second-container form .form-group textarea{
+		width:100%;
+		min-height:80px;
+		resize:none;
+		padding: 10px 20px;
+		font-size: 15px;
+		margin-top:-1px;
+	}
+
+	.second-container form button{
+		width:200px;
+		height:50px;
+		background-color: #333;
+		color: #fff;
+		font-size: 18px;
+		font-weight:600;
+		text-transform: uppercase;
+		border:0;
+		position: center;
+		left: calc(50%-100px);
+		cursor: pointer;
+
+	}
+
+	.second-container form button:hover {
+		background: lightblue;
+		color: #333;
+	}
+
+	/* footer */
+
+	footer{
+		background-color: #333;
+	}
+
+	.social{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.icons{
+		padding:20px;
+		width:50px;
+		text-align:center;
+	}
+    
+	.copyright{
+		color:white;
+		font-size:20px;
+		font-weight:600;
+
+	}
+
+
+
+
+	   /* media queries */
+    
+	   @media only screen and (max-width : 480px) {
+        /* Smartphone view: 1 tile */
+     .gallery-box {
+      width: 100%;
+      padding-bottom: 100%;}
+	  .contact-form{
+		grid-template-areas:
+		'first-container'
+		' second-container';
+	  }
+	
+	}
+
+
+	
+      
+      @media only screen and (max-width : 850px) and (min-width : 481px) {
+        /* Tablet view: 2 tiles */
+     .gallery-box {
+      width: 100;
+      padding-bottom: 50%;}
+
+	  .contact-form{
+		grid-template-areas:
+		'first-container'
+		' second-container';
+	  }
+	}
+
+
+	
+
+
+      
+     
+        @media only screen and (max-width : 1050px) and (min-width : 851px) {
+        /* Small desktop / ipad view: 3 tiles */
+      .gallery-box {
+        width: 50%;
+        padding-bottom: 33.3%;
+      }
+	  .contact-form{
+		grid-template-areas:
+		'first-container first-container second-container';
+	  }
+      }
+     
+     
+      @media only screen and (max-width : 1290px) and (min-width : 1051px) {
+        /* Medium desktop: 4 tiles */
+       
+      .gallery-box {
+        width: 33%;
+        padding-bottom: 25%;
+      }
+	  .contact-form{
+		grid-template-areas:
+		'first-container first-container second-container';
+	  }
+	}
